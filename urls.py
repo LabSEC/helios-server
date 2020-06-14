@@ -14,7 +14,7 @@ urlpatterns = patterns(
     '',
     (r'^auth/', include('helios_auth.urls')),
     (r'^helios/', include('helios.urls')),
-    (r'^admin/', include(admin.site.urls)),
+    #(r'^admin/', include(admin.site.urls)),
     (r'^jsi18n/$', javascript_catalog, js_info_dict),
 )
 
