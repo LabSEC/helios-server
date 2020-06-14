@@ -5,22 +5,30 @@
     <meta charset="utf-8">
 </head>
 <body>
-<p><strong> Caro(a) {{voter.name}},</strong></p>
+<p><strong>Caro(a) membro ministerial,</strong></p>
 
-<p>{{custom_message|safe|linebreaksbr}}
+Encaminhamos, abaixo, a SENHA DE VOTAÇÃO para a <strong>{{election.name}}</strong> do sistema Helios de votação eletrônica, que se iniciárá em {{election.voting_starts_at|date:"j"}} de {{election.voting_starts_at|date:"F"}} de {{election.voting_starts_at|date:"Y"}} as {{election.voting_starts_at|date:"H"}}:{{election.voting_starts_at|date:"i"}} e terminará em {{election.voting_ends_at|date:"j"}} de {{election.voting_ends_at|date:"F"}} de {{election.voting_ends_at|date:"Y"}} as {{election.voting_ends_at|date:"H"}}:{{election.voting_ends_at|date:"i"}}  (horário de Brasília). 
 
-<p>Para votar nessa eleição, clique no link: {{election_vote_url}}</p>
-<br>
-{% ifequal voter.voter_type "password" %}
+<p>Para votar nessa eleição, clique no link: <a href=https://portal.mpf.mp.br/helios/>https://portal.mpf.mp.br/helios/</a></p>
 <p><strong>Seu ID de eleitor:</strong> {{voter.voter_login_id}}
-<br><strong>Sua senha para votar nessa eleição:</strong> {{voter.voter_password}}</p>
-{% else %}
-<p>
-Autentique-se com sua conta de usuário {{voter.voter_type}}.
-</p>
-{% endifequal %}
-<br><br>
---<br>
-Sistema de Votação Eletrônica
+<br><strong>SENHA DE VOTAÇÃO, PESSOAL, INTRANSFERÍVEL E SIGILOSA:</strong> {{voter.voter_password}}</p>
+
+<p>{{custom_message|safe|linebreaksbr}}</p>
+
+<p>Para votação, solicitamos a gentileza da utilização do navegador Chrome e do token da Serasa, colocando-o antes de acessar o sistema.</p>
+
+<p>Se, por qualquer motivo, houver a necessidade de votação sem token ou em iPhone e iPad, favor entrar em contato com as CTICs (unidades) ou a CAR (PGR), para os procedimentos de expedição da certificação digital do MPF (AC-interna).</p>
+
+<p>Em caso de dúvidas, entre em contato pelo endereço <a href=mailto:mpf-votoeletronico@mpf.mp.br>mpf-votoeletronico@mpf.mp.br</a>.</p>
+
+<br>Cordialmente,<br><br>
+
+COMISSÃO ELEITORAL E APURADORA<br>
+CEA-CSMPF<br>
+Edifício Sede PGR<br>
+SAF-Sul, Q. 4, Conj "C", Bl. "A", Sala 203<br>
+70050-900 Brasília-DF<br>
+Telefones: 3105-5221, 3105-5655 e 3105-8195 <a href=mailto:cea-csmpf@mpf.mp.br>cea-csmpf@mpf.mp.br</a><br>
+*Essa é uma mensagem automática. Favor não responder.
 </body>
 </html>

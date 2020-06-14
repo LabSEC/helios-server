@@ -1,1 +1,1 @@
-Informação Adicional: {{custom_subject|safe}}
+Informação Adicional - {{election.name}}{{custom_subject|safe}}

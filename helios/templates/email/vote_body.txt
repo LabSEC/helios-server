@@ -9,7 +9,7 @@
 <br>
 <p>{{custom_message|safe|linebreaksbr}}</p>
 <br>
-<p> URL da Eleição: {{election_vote_url}}</p>
+<p> URL da Eleição: <a href={{election_vote_url}}>{{election_vote_url}}</a></p>
 
 <p>Código de Identificação da Eleição: {{voter.election.hash}}</p>
 <br>
@@ -20,7 +20,7 @@
     <strong>Sua senha para essa eleição</strong>: {{voter.voter_password}}<br>
 </p>
 {% else %}
-<p>Conecte-se com seu usuário e senha dos sistemas do IFSC.</p>
+<p>Conecte-se com seu usuário e senha dos sistemas do UFSC.</p>
 {% endifequal %}
 
 {% if voter.vote_hash %}
@@ -42,7 +42,16 @@ IMPORTANTE: quando você for solicitado a informar seu login para votar, informe
 {% endif %}
 <br>
 <p>Você pode depositar quantos votos quiser, apenas o último voto será contabilizado.</p>
---<br>
-Sistema de Votação Eletrônica
+<p>Em caso de dúvidas, entre em contato pelo endereço <a href=mailto:mpf-votoeletronico@mpf.mp.br>mpf-votoeletronico@mpf.mp.br</a>.</p>
+
+<br>Cordialmente,<br><br>
+
+COMISSÃO ELEITORAL E APURADORA<br>
+CEA-CSMPF<br>
+Edifício Sede PGR<br>
+SAF-Sul, Q. 4, Conj "C", Bl. "A", Sala 203<br>
+70050-900 Brasília-DF<br>
+Telefones: 3105-5221, 3105-5655 e 3105-8195 <a href=mailto:cea-csmpf@mpf.mp.br>cea-csmpf@mpf.mp.br</a><br>
+*Essa é uma mensagem automática. Favor não responder.
 </body>
 </html>

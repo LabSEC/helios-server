@@ -1,15 +1,23 @@
-Caro(a) {{voter.name}},
+<p>Caro(a) {{voter.name}},</p>
 
-Este é um e-mail automático (favor não responder) para confirmar que seu voto foi depositado com sucesso em {{election.name}}.
+<p>Este é um e-mail automático (favor não responder) para confirmar que seu voto foi depositado com sucesso em {{election.name}}.</p>
 
-Sua cédula está arquivada no endereço {{cast_vote_url}} 
+<p>Sua cédula está arquivada no endereço <a href={{cast_vote_url}}>{{cast_vote_url}}</a> </p>
 
 {% if election.use_voter_aliases %}
-Esta eleição usa pseudônimos de eleitores para proteger sua privacidade.
+<p>Esta eleição usa pseudônimos de eleitores para proteger sua privacidade.</p>
 
-Seu pseudônimo é: {{voter.alias}}.
+<p>Seu pseudônimo é: {{voter.alias}}.</p>
 {% endif %}
 
----
+<p>Em caso de dúvidas, entre em contato pelo endereço <a href=mailto:mpf-votoeletronico@mpf.mp.br>mpf-votoeletronico@mpf.mp.br</a>.</p>
 
-Sistema de Votação Eletrônica
+<br>Cordialmente,<br><br>
+
+COMISSÃO ELEITORAL E APURADORA<br>
+CEA-CSMPF<br>
+Edifício Sede PGR<br>
+SAF-Sul, Q. 4, Conj "C", Bl. "A", Sala 203<br>
+70050-900 Brasília-DF<br>
+Telefones: 3105-5221, 3105-5655 e 3105-8195 <a href=mailto:cea-csmpf@mpf.mp.br>cea-csmpf@mpf.mp.br</a><br>
+*Essa é uma mensagem automática. Favor não responder.
