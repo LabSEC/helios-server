@@ -1,43 +1,45 @@
 .top-bar {
 	background-color:#ffffff;	
-	background-image:url('/media/img/logo-mpsc.png');
+	background-image:url('/media/img/logo.png');
 	background-repeat:no-repeat;
-	min-height:80px;
+	min-height:90px;
+	background-size: 160px 84px;
 }
 #banner {
-	background:#77c300;
+	background:#150063;
 }
 
 #footer {
-	background:#77c300;
+	background:#150063;
 }
 #progress_div td.selected {
   background:#DFF0D8;
 }
 .btn-primary,a.btn,.btn-lg,.btn-primary {
-	background-color:#77c300;
-	border-color:#77c300;
+	background-color:#150063;
+	border-color:#150063;
 }
 .btn-primary:hover,#proceed_button{
-	background-color:#009933;
-	border-color:#009933;
+        color: #fff;
+	background-color:#150063;
+	border-color:#150063;
 }
 a:hover, a:focus {
-  color: #009933;
+  color: #150063;
   text-decoration: underline;
 }
 .nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{
-	color:#77c300;
-	background-color:#009933;
+	color:#150063;
+	background-color:#150063;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-  color: #77c300;
-  background-color: #009933;
-  border-color: #77c300;
+  color: #fff;
+  background-color: #150063;
+  border-color: #150063;
 }
 
 .panel-primary > .panel-heading {
-    color: #77c300;
+    color: #150063;
     background-color: #eeeeee;
     border-color: #eeeeee;    
 }
