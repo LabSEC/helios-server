@@ -15,7 +15,16 @@ Encaminhamos, abaixo, a SENHA DE VOTAÇÃO para a <strong>{{election.name}}</str
 
 <p>{{custom_message|safe|linebreaksbr}}</p>
 
-<p>Para votação, solicitamos a gentileza da utilização do navegador Chrome e do token da Serasa, colocando-o antes de acessar o sistema.</p>
+<p><strong>Recomendamos</strong> a utilização do <strong>navegador Chrome</strong> e do <strong>token da Serasa</strong> (colocando-o antes de acessar o sistema), para votação.</p>
+
+<p>Os manuais de importação do certificado e do fluxo de votação estão disponíveis no <strong>MPFDrive -- aba "Público" -- pasta "Votação"</strong> ou através dos links:</p>
+
+<p><strong>Guia para emitir e importar o certificado digital:</strong>
+<a href=https://mpfdrive.mpf.mp.br/ssf/s/readFile/folderEntry/84286218/8a5c82267296cd6e0172995bdb130aa8/1591707749988/last/Vota%C3%A7%C3%A3o%20Eletr%C3%B4nica%20-%20Guia%20de%20emiss%C3%A3o%20do%20Certificado%20digital%20MPF%20AC-interna.pdfp>https://mpfdrive.mpf.mp.br/ssf/s/readFile/folderEntry/84286218/8a5c82267296cd6e0172995bdb130aa8/1591707749988/last/Vota%C3%A7%C3%A3o%20Eletr%C3%B4nica%20-%20Guia%20de%20emiss%C3%A3o%20do%20Certificado%20digital%20MPF%20AC-interna.pdf</a></p>
+
+<p><strong>Guia Rápido do Usuário do Sistema Helios:</strong>
+<a href=https://mpfdrive.mpf.mp.br/ssf/s/readFile/folderEntry/84343713/8a5c82297296cd120172a9c4429f0a8a/1591986040695/last/Guia%20R%C3%A1pido%20do%20Usua%CC%81rio%20do%20Sistema%20Helios%20v3.pdf> https://mpfdrive.mpf.mp.br/ssf/s/readFile/folderEntry/84343713/8a5c82297296cd120172a9c4429f0a8a/1591986040695/last/Guia%20R%C3%A1pido%20do%20Usua%CC%81rio%20do%20Sistema%20Helios%20v3.pdfi</a></p>
+
 
 <p>Se, por qualquer motivo, houver a necessidade de votação sem token ou em iPhone e iPad, favor entrar em contato com as CTICs (unidades) ou a CAR (PGR), para os procedimentos de expedição da certificação digital do MPF (AC-interna).</p>
 
