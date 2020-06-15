@@ -16,7 +16,7 @@ def get_from_env(var, default):
     else:
         return default
 
-DEBUG = (get_from_env('DEBUG', '1') == '1')
+DEBUG = (get_from_env('DEBUG', '0') == '1')
 TEMPLATE_DEBUG = DEBUG
 
 #If the Host header (or X-Forwarded-Host if USE_X_FORWARDED_HOST is enabled) does not match any value in this list, the django.http.HttpRequest.get_host() method will raise SuspiciousOperation.
@@ -234,7 +234,7 @@ ALLOW_ELECTION_INFO_URL = (get_from_env('ALLOW_ELECTION_INFO_URL', '0') == '1')
 FOOTER_LINKS = json.loads(get_from_env('FOOTER_LINKS', '[]'))
 FOOTER_LOGO_URL = get_from_env('FOOTER_LOGO_URL', None)
 
-WELCOME_MESSAGE = '<h1> <strong><span style="color:#77c300;">Bem-vindo(a) ao Sistema de Votação Eletrônica do MP-SC</span></strong></h1>'
+WELCOME_MESSAGE = '<h1> <strong><span style="color:#150063;">Bem-vindo(a) ao Sistema de Votação Eletrônica do MPF</span></strong></h1>'
 
 HELP_EMAIL_ADDRESS = get_from_env('HELP_EMAIL_ADDRESS', 'labsec.contato@gmail.com')
 
