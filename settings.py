@@ -16,7 +16,7 @@ def get_from_env(var, default):
     else:
         return default
 
-DEBUG = (get_from_env('DEBUG', '0') == '1')
+DEBUG = (get_from_env('DEBUG', '1') == '1')
 TEMPLATE_DEBUG = DEBUG
 
 #If the Host header (or X-Forwarded-Host if USE_X_FORWARDED_HOST is enabled) does not match any value in this list, the django.http.HttpRequest.get_host() method will raise SuspiciousOperation.
@@ -25,10 +25,11 @@ TEMPLATE_DEBUG = DEBUG
 #More info: https://docs.djangoproject.com/en/1.7/ref/settings/#allowed-hosts
 
 # set a value for production environment, alongside with debug set to false
-ALLOWED_HOSTS = get_from_env('ALLOWED_HOSTS', 'mp-sc-eleicao.labsec.ufsc.br').split(",")
+#ALLOWED_HOSTS = get_from_env('ALLOWED_HOSTS', 'teste-mpf.labsec.ufsc.br', 'portal.mpf.mp.br').split(",")
+ALLOWED_HOSTS = ['teste-mpf.labsec.ufsc.br', 'portal.mpf.mp.br', '150.162.11.79']
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = get_from_env('SECRET_KEY', 'votacao')
+SECRET_KEY = get_from_env('SECRET_KEY', 'rntz34zs')
 ROOT_URLCONF = 'urls'
 
 ROOT_PATH = os.path.dirname(__file__)
@@ -36,7 +37,7 @@ ROOT_PATH = os.path.dirname(__file__)
 # add admins of the form: 
 #    ('Ben Adida', 'ben@adida.net'),
 # if you want to be emailed about errors.
-ADMINS = ( 'votacao', 'Votacao' )
+ADMINS = ( 'Sistema de Eleição', 'eleicao@sistemas.ufsc.br' )
 
 MANAGERS = ADMINS
 
@@ -56,7 +57,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'helios',
         'USER': 'votacao',
-        'PASSWORD': 'votacao',
+        'PASSWORD': 'y8FXeUGb',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
@@ -209,7 +212,7 @@ VOTER_UPLOAD_REL_PATH = "voters/%Y/%m/%d"
 
 
 # Change your email settings
-DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'jean.martina@gmail.com')
+DEFAULT_FROM_EMAIL = get_from_env('DEFAULT_FROM_EMAIL', 'eleicao@sistemas.ufsc.br')
 DEFAULT_FROM_NAME = get_from_env('DEFAULT_FROM_NAME', 'Sistema de Votacao Eletrônica')
 SERVER_EMAIL = '%s <%s>' % (DEFAULT_FROM_NAME, DEFAULT_FROM_EMAIL)
 
@@ -218,7 +221,7 @@ LOGOUT_ON_CONFIRMATION = True
 
 # The two hosts are here so the main site can be over plain HTTP
 # while the voting URLs are served over SSL.
-URL_HOST = get_from_env("URL_HOST", 'https://mp-sc-eleicao.labsec.ufsc.br').rstrip("/")
+URL_HOST = get_from_env("URL_HOST", 'https://teste-mpf.labsec.ufsc.br').rstrip("/")
 
 # IMPORTANT: you should not change this setting once you've created
 # elections, as your elections' cast_url will then be incorrect.
@@ -226,7 +229,7 @@ URL_HOST = get_from_env("URL_HOST", 'https://mp-sc-eleicao.labsec.ufsc.br').rstr
 SECURE_URL_HOST = get_from_env("SECURE_URL_HOST", URL_HOST).rstrip("/")
 
 # election stuff
-SITE_TITLE = get_from_env('SITE_TITLE', _('Sistema de Votacao do ...'))
+SITE_TITLE = get_from_env('SITE_TITLE', _('Sistema de Votacao do MPF'))
 MAIN_LOGO_URL = get_from_env('MAIN_LOGO_URL', '/static/logo.png')
 ALLOW_ELECTION_INFO_URL = (get_from_env('ALLOW_ELECTION_INFO_URL', '0') == '1')
 
