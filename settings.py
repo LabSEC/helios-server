@@ -226,7 +226,7 @@ URL_HOST = get_from_env("URL_HOST", 'https://mp-sc-eleicao.labsec.ufsc.br').rstr
 SECURE_URL_HOST = get_from_env("SECURE_URL_HOST", URL_HOST).rstrip("/")
 
 # election stuff
-SITE_TITLE = get_from_env('SITE_TITLE', _('Sistema de Votacao do ...'))
+SITE_TITLE = get_from_env('SITE_TITLE', _('Sistema de Votacao do IPREV'))
 MAIN_LOGO_URL = get_from_env('MAIN_LOGO_URL', '/static/logo.png')
 ALLOW_ELECTION_INFO_URL = (get_from_env('ALLOW_ELECTION_INFO_URL', '0') == '1')
 
@@ -234,7 +234,7 @@ ALLOW_ELECTION_INFO_URL = (get_from_env('ALLOW_ELECTION_INFO_URL', '0') == '1')
 FOOTER_LINKS = json.loads(get_from_env('FOOTER_LINKS', '[]'))
 FOOTER_LOGO_URL = get_from_env('FOOTER_LOGO_URL', None)
 
-WELCOME_MESSAGE = '<h1> <strong><span style="color:#77c300;">Bem-vindo(a) ao Sistema de Votação Eletrônica do MP-SC</span></strong></h1>'
+WELCOME_MESSAGE = '<h1> <strong>Bem-vindo(a) ao Sistema de Votação Eletrônica do IPREV</strong></h1>'
 
 HELP_EMAIL_ADDRESS = get_from_env('HELP_EMAIL_ADDRESS', 'labsec.contato@gmail.com')
 
