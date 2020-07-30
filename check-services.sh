@@ -4,10 +4,10 @@ SERVICES=('celeryd' 'celerybeat')
 for service in ${SERVICES[@]}; do
     if ps ax | grep -v grep | grep $service > /dev/null
     then
-        echo "$service service running, everything is fine"
+        #echo "$service service running, everything is fine"
     else
         echo "$service is not running"
-        cd /var/www/helios-server && \
+        cd /home/votacao/helios-server && \
         source venv/bin/activate
 
         if [ "$service" == "celeryd" ]; then
